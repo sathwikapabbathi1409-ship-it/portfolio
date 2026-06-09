@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabbathi Sathwika | AI/ML Student Portfolio</title>
+    <meta name="description" content="Portfolio of Pabbathi Sathwika, a final-year B.Tech AIML student and aspiring AI/ML & Generative AI Engineer. Exploring projects, certifications, and skills.">
+    <meta name="keywords" content="Pabbathi Sathwika, AIML, AI Engineer, Machine Learning, Generative AI, Portfolio, Student Portfolio, CMR Engineering College">
+    <meta name="author" content="Pabbathi Sathwika">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pabbathi Sathwika | AI/ML Portfolio">
+    <meta property="og:description" content="Final-year B.Tech AIML student specializing in Artificial Intelligence, Machine Learning, and Generative AI.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark-theme">
+    <!-- Background Glow Elements for AI theme -->
+    <div class="glow-bg-container">
+        <div class="glow-sphere glow-1"></div>
+        <div class="glow-sphere glow-2"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header id="main-header" class="header-glass">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>PS<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#journey" class="nav-link">Journey</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+                    <i data-lucide="menu" id="menu-icon-open"></i>
+                    <i data-lucide="x" id="menu-icon-close" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-ai animate-fade-in">
+                        <i data-lucide="cpu" class="badge-icon"></i>
+                        <span>AI/ML Engineering Student</span>
+                    </div>
+                    <h1 class="hero-title animate-slide-up">
+                        Hi, I am <span class="name-gradient">Pabbathi Sathwika</span>
+                    </h1>
+                    <h2 class="hero-headline animate-slide-up delay-1">
+                        Final-Year AIML Student | Aspiring AI/ML & Generative AI Engineer
+                    </h2>
+                    <p class="hero-subheadline animate-slide-up delay-2">
+                        Passionate about Artificial Intelligence, Machine Learning, Generative AI, Data Structures & Algorithms, and building impactful technology solutions.
+                    </p>
+                    <p class="hero-intro animate-slide-up delay-2">
+                        I am a final-year Artificial Intelligence and Machine Learning student with a strong interest in AI, Machine Learning, Generative AI, and Software Development. I enjoy solving problems, learning emerging technologies, and building projects that create real-world impact.
+                    </p>
+                    
+                    <div class="hero-cta animate-slide-up delay-3">
+                        <a href="assets/Pabbathi_Sathwika_Resume.pdf" download="Pabbathi_Sathwika_Resume.pdf" class="btn btn-primary" id="btn-download-resume">
+                            <i data-lucide="download"></i>
+                            <span>Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+                            <i data-lucide="mail"></i>
+                            <span>Contact Me</span>
+                        </a>
+                        <div class="social-links-container">
+                            <a href="https://www.linkedin.com/in/sathwika-pabbathi-2429ab2b3?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" id="link-hero-linkedin">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/sathwikapabbathi1409-ship-it" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" id="link-hero-github">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/8PHT51FGFY/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LeetCode Profile" id="link-hero-leetcode">
+                                <i data-lucide="code-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container animate-fade-in delay-2">
+                    <div class="avatar-wrapper">
+                        <img src="assets/sathwika_placeholder.png" alt="Pabbathi Sathwika Profile Photo" class="avatar-img" id="avatar-image">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-glow"></div>
+                        <!-- Micro Interaction overlay info -->
+                        <div class="avatar-status-badge">
+                            <span class="status-dot"></span>
+                            <span>Open to Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator animate-bounce">
+                <a href="#about" aria-label="Scroll down">
+                    <i data-lucide="chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info-card glass-card">
+                        <div class="about-icon-header">
+                            <i data-lucide="user" class="accent-color"></i>
+                            <h3>Professional Overview</h3>
+                        </div>
+                        <p>
+                            As an undergraduate student specializing in <strong>Artificial Intelligence and Machine Learning (AIML)</strong>, I have spent my academic journey acquiring foundational concepts and applying them to projects. 
+                        </p>
+                        <p>
+                            My approach combines analytical rigor with hands-on practice. I am deeply interested in how <strong>Machine Learning models</strong> and <strong>Generative AI technologies</strong> can optimize workflows, automate decision-making, and create personalized human-machine interactions.
+                        </p>
+                        <p>
+                            I am currently looking for opportunities where I can apply my growing expertise as an <strong>AI Engineer</strong> or <strong>Generative AI Engineer</strong>. I thrive in collaborative environments that demand continuous learning and adaptive problem-solving.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights glass-card">
+                        <div class="about-icon-header">
+                            <i data-lucide="sparkles" class="accent-color"></i>
+                            <h3>Core Pillars</h3>
+                        </div>
+                        <ul class="highlight-list">
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span><strong>AIML Undergraduate Student</strong> with strong foundations.</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span>Deeply curious about <strong>AI, ML, and Generative AI</strong> ecosystems.</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span>Currently strengthening coding logic in <strong>Data Structures & Algorithms</strong>.</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span>Gaining database design and query expertise using <strong>SQL</strong>.</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span>Developing <strong>real-world AI applications</strong> to bridge theory and practice.</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span>Motivated to excel in <strong>AI/GenAI Engineer</strong> roles upon graduation.</span>
+                            </li>
+                            <li>
+                                <div class="list-bullet"><i data-lucide="check"></i></div>
+                                <span>Dedicated to <strong>continuous learning</strong> and technological innovation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Journey</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="education-timeline">
+                    <div class="timeline-item glass-card">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="timeline-period">2023 – 2027</span>
+                                <span class="timeline-badge">B.Tech</span>
+                            </div>
+                            <h3 class="timeline-title">CMR Engineering College</h3>
+                            <h4 class="timeline-subtitle">Bachelor of Technology – Artificial Intelligence and Machine Learning</h4>
+                            <div class="education-score-card">
+                                <span class="score-label">Cumulative GPA</span>
+                                <span class="score-value">8.48</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Specialized academic curriculum covering Advanced Mathematics, Python Programming, Machine Learning Algorithms, Neural Networks, Database Systems, and Software Engineering practices. Participated in technical clubs and hackathons representing the college.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Certifications Section -->
+        <section id="skills" class="skills-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">What I Know</span>
+                    <h2 class="section-title">Skills &amp; Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Skills Category 1: Languages -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i data-lucide="code" class="accent-color"></i>
+                            <h3>Programming</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">Python</span><span class="skill-badge level-proficient">Proficient</span></li>
+                            <li><span class="skill-name">HTML</span><span class="skill-badge level-proficient">Proficient</span></li>
+                            <li><span class="skill-name">CSS</span><span class="skill-badge level-proficient">Proficient</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills Category 2: Learning Focus -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i data-lucide="book-open" class="accent-color"></i>
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">C++</span><span class="skill-badge level-learning">Learning</span></li>
+                            <li><span class="skill-name">Data Structures &amp; Algorithms</span><span class="skill-badge level-learning">Learning</span></li>
+                            <li><span class="skill-name">SQL</span><span class="skill-badge level-learning">Learning</span></li>
+                            <li><span class="skill-name">Machine Learning</span><span class="skill-badge level-learning">Learning</span></li>
+                            <li><span class="skill-name">Generative AI</span><span class="skill-badge level-learning">Learning</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills Category 3: Tools -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i data-lucide="terminal" class="accent-color"></i>
+                            <h3>Tools &amp; Environments</h3>
+                        </div>
+                        <div class="tools-tags">
+                            <span class="tool-tag">GitHub</span>
+                            <span class="tool-tag">VS Code</span>
+                            <span class="tool-tag">Google Colab</span>
+                            <span class="tool-tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+
+                    <!-- Skills Category 4: AI/ML -->
+                    <div class="skills-card glass-card">
+                        <div class="skills-header">
+                            <i data-lucide="binary" class="accent-color"></i>
+                            <h3>AI &amp; Machine Learning</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li><span class="skill-name">ML Fundamentals</span><span class="skill-badge level-active">Active</span></li>
+                            <li><span class="skill-name">Generative AI Concepts</span><span class="skill-badge level-active">Active</span></li>
+                            <li><span class="skill-name">Prompt Engineering</span><span class="skill-badge level-active">Active</span></li>
+                            <li><span class="skill-name">AI Tools &amp; Applications</span><span class="skill-badge level-active">Active</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certifications & Achievements Subsections -->
+                <div class="certifications-achievements-container">
+                    <!-- Certifications Card -->
+                    <div class="cert-card glass-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="award" class="accent-color"></i>
+                            <h3>Certifications</h3>
+                        </div>
+                        <div class="items-list">
+                            <div class="item-entry">
+                                <i data-lucide="shield-check" class="item-check"></i>
+                                <div class="item-info">
+                                    <h4>Google Cloud Generative AI Certification</h4>
+                                    <p>Foundational principles of generative AI models, LLMs, and Google Cloud platform implementations.</p>
+                                </div>
+                            </div>
+                            <div class="item-entry">
+                                <i data-lucide="shield-check" class="item-check"></i>
+                                <div class="item-info">
+                                    <h4>Infosys Springboard Python Certification</h4>
+                                    <p>Comprehensive evaluation of Python programming concepts, object-oriented concepts, and algorithms.</p>
+                                </div>
+                            </div>
+                            <div class="item-entry">
+                                <i data-lucide="shield-check" class="item-check"></i>
+                                <div class="item-info">
+                                    <h4>Salesforce Agent Specialist Certification</h4>
+                                    <p>Validation of skills regarding agent setup, customer flows, and specialized CRM administration capabilities.</p>
+                                </div>
+                            </div>
+                            <div class="item-entry">
+                                <i data-lucide="shield-check" class="item-check"></i>
+                                <div class="item-info">
+                                    <h4>Pragati Program Cohort 8 Selection</h4>
+                                    <p>Competitive selection for professional and technical skill acceleration and industry mentorship.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Card -->
+                    <div class="ach-card glass-card">
+                        <div class="card-icon-header">
+                            <i data-lucide="trophy" class="accent-color"></i>
+                            <h3>Achievements &amp; Leadership</h3>
+                        </div>
+                        <div class="items-list">
+                            <div class="item-entry">
+                                <div class="item-icon-wrapper winner-gold">
+                                    <i data-lucide="crown"></i>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Thematic Winner – One Earth International Hackathon</h4>
+                                    <p>Collaborated internationally to design an AI-powered solution targeted at global environmental conservation metrics.</p>
+                                </div>
+                            </div>
+                            <div class="item-entry">
+                                <div class="item-icon-wrapper winner-bronze">
+                                    <i data-lucide="medal"></i>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Third Prize – College Internal Hackathon</h4>
+                                    <p>Engineered a prototype under a tight 24-hour time constraint addressing local community challenges.</p>
+                                </div>
+                            </div>
+                            <div class="item-entry">
+                                <div class="item-icon-wrapper leader-blue">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <div class="item-info">
+                                    <h4>Class Representative</h4>
+                                    <p>Elected leadership role representing peer students, coordinating academic activities, and liaising with faculty.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Builds</span>
+                    <h2 class="section-title">Projects In Progress</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card">
+                        <div class="project-image-box">
+                            <img src="assets/project_chatbot.png" alt="AI Career Guidance Chatbot Mockup" class="project-img">
+                            <span class="project-status-badge status-building">Currently Building</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">AI Career Guidance Chatbot</h3>
+                            <div class="project-problem">
+                                <strong>Problem Statement:</strong> Students struggle to navigate custom career pathways and identify relevant skills for their desired engineering roles.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Generative AI</span>
+                                <span class="tech-tag">LLM API</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="link-proj1-github">
+                                    <i data-lucide="github"></i>
+                                    <span>Repo Placeholder</span>
+                                </a>
+                                <a href="#" class="project-link-btn disabled-btn" onclick="return false;" id="link-proj1-demo">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Deployment Planned</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card">
+                        <div class="project-image-box">
+                            <img src="assets/project_resume.png" alt="Resume Analyzer using AI Mockup" class="project-img">
+                            <span class="project-status-badge status-planned">Planned</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Resume Analyzer using AI</h3>
+                            <div class="project-problem">
+                                <strong>Problem Statement:</strong> Applicants lack clear, automated feedback on how well their resumes align with technical job descriptions.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Generative AI</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="link-proj2-github">
+                                    <i data-lucide="github"></i>
+                                    <span>Repo Placeholder</span>
+                                </a>
+                                <a href="#" class="project-link-btn disabled-btn" onclick="return false;" id="link-proj2-demo">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Deployment Planned</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card">
+                        <div class="project-image-box">
+                            <img src="assets/project_interview.png" alt="Interview Preparation Assistant Mockup" class="project-img">
+                            <span class="project-status-badge status-planned">Planned</span>
+                        </div>
+                        <div class="project-details">
+                            <h3 class="project-title">Interview Preparation Assistant</h3>
+                            <div class="project-problem">
+                                <strong>Problem Statement:</strong> Aspiring engineers lack structured, interactive environments to practice technical interviews and receive immediate feedback.
+                            </div>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Speech-to-Text</span>
+                                <span class="tech-tag">LLM Evaluation</span>
+                                <span class="tech-tag">Web App</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="link-proj3-github">
+                                    <i data-lucide="github"></i>
+                                    <span>Repo Placeholder</span>
+                                </a>
+                                <a href="#" class="project-link-btn disabled-btn" onclick="return false;" id="link-proj3-demo">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Deployment Planned</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Journey Section -->
+        <section id="journey" class="journey-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Roadmap</span>
+                    <h2 class="section-title">Learning Journey</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="journey-intro">
+                    <p>Instead of declaring experience that has not yet been gained, I believe in being transparent about my growth. Here is what I am actively focusing on to become an industry-ready software and AI/ML engineer:</p>
+                </div>
+
+                <div class="journey-grid">
+                    <!-- Card 1: DSA -->
+                    <div class="journey-card glass-card">
+                        <div class="journey-icon-box card-blue">
+                            <i data-lucide="layers"></i>
+                        </div>
+                        <h3>Data Structures &amp; Algorithms</h3>
+                        <p>Strengthening logic building, understanding arrays, linked lists, trees, graphs, and algorithmic complexity to solve core computing problems.</p>
+                    </div>
+
+                    <!-- Card 2: SQL -->
+                    <div class="journey-card glass-card">
+                        <div class="journey-icon-box card-green">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3>SQL &amp; Database Concepts</h3>
+                        <p>Learning relational algebra, structure query language syntax, database schemas, normalization, and optimization for robust backend data management.</p>
+                    </div>
+
+                    <!-- Card 3: Machine Learning -->
+                    <div class="journey-card glass-card">
+                        <div class="journey-icon-box card-violet">
+                            <i data-lucide="brain-circuit"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Diving into supervised and unsupervised learning algorithms, model evaluation metrics, feature engineering, and pipeline implementation.</p>
+                    </div>
+
+                    <!-- Card 4: Generative AI -->
+                    <div class="journey-card glass-card">
+                        <div class="journey-icon-box card-red">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <h3>Generative AI</h3>
+                        <p>Understanding Large Language Models, prompt crafting paradigms, model tuning concepts, and API integration for AI agents.</p>
+                    </div>
+
+                    <!-- Card 5: Problem Solving -->
+                    <div class="journey-card glass-card">
+                        <div class="journey-icon-box card-yellow">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <h3>Problem Solving</h3>
+                        <p>Developing an analytical engineering mindset by solving computational coding challenges regularly on structured platforms.</p>
+                    </div>
+
+                    <!-- Card 6: Interview Prep -->
+                    <div class="journey-card glass-card">
+                        <div class="journey-icon-box card-teal">
+                            <i data-lucide="clipboard-list"></i>
+                        </div>
+                        <h3>Interview Preparation</h3>
+                        <p>Gaining fluency in technical concepts, practicing coding dry runs, studying systems design foundation, and practicing communication skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info glass-card">
+                        <h3>Let's Connect</h3>
+                        <p>I am actively seeking internship or entry-level opportunities in Artificial Intelligence, Machine Learning, and Software Engineering. Please reach out if you'd like to collaborate, mentor, or discuss roles.</p>
+                        
+                        <div class="contact-channels">
+                            <div class="channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span>Email Me</span>
+                                    <a href="mailto:sathwikapabbathi1409@gmail.com" id="link-contact-email">sathwikapabbathi1409@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span>LinkedIn</span>
+                                    <a href="https://www.linkedin.com/in/sathwika-pabbathi-2429ab2b3?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" id="link-contact-linkedin">Pabbathi Sathwika</a>
+                                </div>
+                            </div>
+
+                            <div class="channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="github"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span>GitHub</span>
+                                    <a href="https://github.com/sathwikapabbathi1409-ship-it" target="_blank" rel="noopener noreferrer" id="link-contact-github">sathwikapabbathi1409-ship-it</a>
+                                </div>
+                            </div>
+
+                            <div class="channel-item">
+                                <div class="channel-icon">
+                                    <i data-lucide="code-2"></i>
+                                </div>
+                                <div class="channel-details">
+                                    <span>LeetCode</span>
+                                    <a href="https://leetcode.com/u/8PHT51FGFY/" target="_blank" rel="noopener noreferrer" id="link-contact-leetcode">8PHT51FGFY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" action="#" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input type="text" id="form-name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email">Email</label>
+                                <input type="email" id="form-email" required placeholder="your.email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Internship Opportunity / Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" required rows="5" placeholder="Write your message here..."></textarea>
+                            </div>
+                            
+                            <button type="submit" id="btn-form-submit" class="btn btn-primary btn-block">
+                                <span>Send Message</span>
+                                <i data-lucide="send" id="btn-submit-icon"></i>
+                            </button>
+                            <div id="form-feedback" class="form-feedback hidden"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2026 Pabbathi Sathwika. All rights reserved.</p>
+            <p class="footer-credit">Designed and Developed by Pabbathi Sathwika</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle -->
+    <script src="script.js"></script>
+</body>
+</html>
