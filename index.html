@@ -646,12 +646,18 @@
         </div>
     </footer>
 
-    <!-- JavaScript Bundle -->
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-emailjs.init("hLsp6G4JEqlgVAYh1");
+(function () {
+    emailjs.init({
+        publicKey: "hLsp6G4JEqlgVAYh1",
+    });
+})();
 </script>
+
+<!-- Your JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
