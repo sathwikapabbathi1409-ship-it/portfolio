@@ -176,4 +176,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(styleElement);
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const params = {
+        from_name: document.getElementById("form-name").value,
+        from_email: document.getElementById("form-email").value,
+        subject: document.getElementById("form-subject").value,
+        message: document.getElementById("form-message").value
+    };
+
+    emailjs.send(
+        "service_4krceob",
+        "template_yz59gh9",
+        params
+    )
+    .then(function(response) {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+        console.log("SUCCESS!", response.status, response.text);
+    })
+    .catch(function(error) {
+        alert("Failed to send message.");
+        console.error("FAILED...", error);
+    });
+});
 });
