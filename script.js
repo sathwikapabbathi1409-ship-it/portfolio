@@ -106,99 +106,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Interactive Contact Form Handler (Mock Submission)
-    const contactForm = document.getElementById('contact-form');
-    const formFeedback = document.getElementById('form-feedback');
-    const submitBtn = document.getElementById('btn-form-submit');
-    const submitBtnText = submitBtn.querySelector('span');
-    const submitBtnIcon = document.getElementById('btn-submit-icon');
+   const contactForm = document.getElementById('contact-form');
+const formFeedback = document.getElementById('form-feedback');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Collect Form Values
-            const name = document.getElementById('form-name').value;
-            const email = document.getElementById('form-email').value;
-            const subject = document.getElementById('form-subject').value;
-            const message = document.getElementById('form-message').value;
+if (contactForm) {
 
-            // Set Loading state
-            submitBtn.disabled = true;
-            submitBtn.style.opacity = '0.7';
-            submitBtnText.textContent = 'Sending...';
-            
-            // Temporarily replace send icon with simple loader spinner
-            if (typeof lucide !== 'undefined') {
-                submitBtnIcon.setAttribute('data-lucide', 'loader-2');
-                lucide.createIcons();
-                submitBtnIcon.classList.add('animate-spin'); // spin animation handled by Tailwind or custom css
-            }
+    contactForm.addEventListener('submit', function(e) {
 
-            // Simulate Network Request delay
-            setTimeout(() => {
-                // Success State
-                submitBtn.disabled = false;
-                submitBtn.style.opacity = '1';
-                submitBtnText.textContent = 'Send Message';
-                
-                if (typeof lucide !== 'undefined') {
-                    submitBtnIcon.setAttribute('data-lucide', 'send');
-                    submitBtnIcon.classList.remove('animate-spin');
-                    lucide.createIcons();
-                }
+        e.preventDefault();
 
-                formFeedback.classList.remove('hidden', 'error');
-                formFeedback.classList.add('success');
-                formFeedback.textContent = `Thank you, ${name}! Your message has been sent successfully. Sathwika will get back to you soon.`;
+        const params = {
+            from_name: document.getElementById('form-name').value,
+            from_email: document.getElementById('form-email').value,
+            subject: document.getElementById('form-subject').value,
+            message: document.getElementById('form-message').value
+        };
 
-                // Reset Form Fields
-                contactForm.reset();
+        emailjs.send(
+            "service_4krceob",
+            "template_yz59gh9",
+            params
+        )
+        .then(function() {
 
-                // Hide feedback message after 5 seconds
-                setTimeout(() => {
-                    formFeedback.classList.add('hidden');
-                }, 5000);
+            formFeedback.classList.remove('hidden');
+            formFeedback.classList.add('success');
 
-            }, 1800);
+            formFeedback.textContent =
+                "Message sent successfully! I'll get back to you soon.";
+
+            contactForm.reset();
+
+        })
+        .catch(function(error) {
+
+            formFeedback.classList.remove('hidden');
+            formFeedback.classList.add('error');
+
+            formFeedback.textContent =
+                "Failed to send message. Please try again.";
+
+            console.error(error);
         });
-    }
 
-    // 7. Extra Custom Feature: Spinning spinner rotation utility for loader icon
-    const styleElement = document.createElement('style');
-    styleElement.innerHTML = `
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        .animate-spin {
-            animation: spin 1s linear infinite;
-        }
-    `;
-    document.head.appendChild(styleElement);
-    document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const params = {
-        from_name: document.getElementById("form-name").value,
-        from_email: document.getElementById("form-email").value,
-        subject: document.getElementById("form-subject").value,
-        message: document.getElementById("form-message").value
-    };
-
-    emailjs.send(
-        "service_4krceob",
-        "template_yz59gh9",
-        params
-    )
-    .then(function(response) {
-        alert("Message sent successfully!");
-        document.getElementById("contact-form").reset();
-        console.log("SUCCESS!", response.status, response.text);
-    })
-    .catch(function(error) {
-        alert("Failed to send message.");
-        console.error("FAILED...", error);
     });
-});
+
+}
 });
